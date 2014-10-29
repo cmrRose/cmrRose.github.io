@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wisconsin State Capitol</title>
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<!--stylesheets--> 
+    <link rel="stylesheet" href="css/style.css" />
+	
+	<link rel="stylesheet" href="css/leaflet.css" />
+	
+	<link rel="stylesheet" href="lib/jquery-ui-1.10.1.custom/css/custom-theme/jquery-ui-1.10.1.custom.css" />
+	
+	<link href='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+	
+	
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/leaflet.ie.css" />
+    <![endif]-->	  
+	
+</head>
+
+<body>
+	<header>
+
+		<h2>Wisconsin State Capitol</h2>
+
+
+	</header>
+
+	<div id="container"><!--all content between the header and footer-->
+		
+		
+		
+<!--	old reset zoom div	
+		<div id="resetZoom">
+			<span id="resetZoomContent">
+				<b>reset zoom</b>
+			</span>
+		</div>
+-->			
+
+		<div id="profile">
+			<div id="floorLabel"> 
+				<p>now viewing: <br/>
+					<span class="bold15em">Ground <br/>Floor</span>
+				</p>
+				
+			</div><!-- end floorLabel div-->
+		</div> <!--ends 'profile' building silhouette div-->
+	
+		<div id="map">	</div> <!--end map div-->
+
+		<p id="footnotes"> 
+			by Caroline Rose at University of Wisconsin-Madison<br/> 
+			Tiles hosted by <a href="mapbox.com"><span class="link">MapBox</span></a><br/>
+			Web design with <a href="d3js.org"><span class="link">d3 Javascript library</span></a> 
+		</p>
+		
+	</div><!-- end container div-->
+	
+	
+	<!--JAVASCRIPT-->
+	
+		<!--libraries-->
+		<script src="js/leaflet-src.js"></script>
+		<script src="js/leaflet.js"></script>
+        <script src="js/jquery/jquery-1.9.0.min.js"></script>
+<!--	<script src="js/raphael.js"></script> -->
+		<script src="js/d3.v3.js"></script>
+		<script src="js/d3.v3.min.js"></script>
+		<script src="js/topojson.js"></script>
+		
+		<script src='https://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
+
+		
+		<!--link to CSV prototype functions-->
+		<script src="js/EventTarget.js"></script>
+		<script src="js/ProcessCSV.js"></script>
+		
+		<!-- Geojson files  -->
+		<script src="data/wings.geojson"></script>
+		<script src="data/routes.geojson"></script>
+		
+		<script src="data/floorBvector_Apr3.js"></script>
+		<script src="data/floor0vector_Apr3.js"></script>
+		<script src="data/floor1vector_Apr3.js"></script>
+		<script src="data/floor2vector_Apr3.js"></script>
+		<script src="data/floor3vector_Apr3.js"></script>
+		<script src="data/floor4vector_Apr3.js"></script>
+				
+		<!--main javascript file-->
+		<script src="js/main.js"></script>
+				
+		<!--link to custom jQuery UI--> 
+		<script src="lib/jquery-ui-1.10.1.custom/js/jquery-ui-1.10.1.custom.min.js"></script>
+		
+</body>
+</html>
