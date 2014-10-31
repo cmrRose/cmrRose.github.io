@@ -1,0 +1,287 @@
+body{
+	color: #888;
+	font-family: "Georgia", serif;
+	background-color: #333131;
+	width:900px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 20px;
+}
+
+header{
+	width: 900px;
+	height: 60px;
+	display: block;
+	/*position:relative;*/
+	/*position: absolute;   -- this screwed everything up. Don't do it again.*/
+}
+
+/*----------------rules for parts of header----------------*/
+
+h1{ 
+	float: left;
+}
+
+h1 a{
+	text-decoration: none;
+	color: #888;
+}
+
+nav ul {
+	list-style-type: none;
+	font-family: "Georgia", serif;
+	float: right;
+	padding-top: 18px;
+		
+}
+	
+nav ul li {
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #888;
+}
+	
+nav ul li a:hover {
+	color: #FFF;
+}
+
+#currentPage{
+	font-size: 1.4em;
+}
+
+/*----------------end rules for parts of header----------------*/
+
+/* ~~~~~~~~~ rules for content div ~~~~~~~~~ */
+#content {
+	display:block;
+	margin: 40px auto 0 auto;
+	position:relative;
+	width:900px;
+}
+
+#content a {
+	text-decoration: none;
+	color:#888
+}
+
+#content a:hover {
+	color: #FFF;
+}
+
+#content img {
+	z-index: 10;
+}
+
+#content a img {
+	border: 0;
+}
+#content a img:hover {
+	opacity: 0.7;
+}
+#bio_text{
+	position: absolute;
+	left: 350px;
+	top: -10px;
+	width: 550px;
+}
+
+/* ~~~~~~~~~ end rules for content div ~~~~~~~~~ */
+	
+footer {
+	color: #888;
+	position: absolute;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	width: 900px;
+}
+	
+
+/*----------------rules for tables----------------*/
+table{
+	width:900px;
+	border-collapse:collapse;
+	display:block;
+	clear: left;
+}
+.width40{
+	width: 40px;
+}
+.width820{
+	width:820px
+}
+
+.margins-top-right-30 {
+	/*margins for table photos on portfolio page*/
+	margin: 30px 30px 0 0;
+}
+
+.margins-bottom30-right40 {
+	/*margins for table photos on document repair page*/
+	margin: 0px 40px 30px 0;
+}
+
+.margins-top30-right40 {
+	/* margins for table photos on bath book page and triangle book page*/
+	margin: 30px 40px 0 0;
+}
+
+table a{ 
+	text-decoration: none;
+	color:#888;
+}
+
+table a:hover {
+	color:#FFF;	
+}
+
+/*----------------end rules for tables----------------*/
+
+
+/*..........................spacing and position classes..........................*/
+.indent20{
+	padding-left:20px;
+}
+.indent40{
+	padding-left:40px;
+}
+.indent50{
+	padding-left:50px;
+}
+.pad-top-30{
+	padding-top: 30px;
+}
+.float-right{
+	float: right;
+}
+.float-left{
+	float: left;
+}
+/*..........................end spacing and position classes..........................*/
+
+.bold_me{
+	font-weight:bold;
+}
+.center_me{
+	text-align: center;
+}
+.underline_me{
+	text-decoration: underline;
+	display: inline;
+}
+
+.description {
+	display:block;
+	float:left;
+}
+
+/* ================================== Ribbon images ================================== */
+#ribbon {
+	/* on portfolio page for skydiving map */
+	position: absolute;
+	z-index: 1;
+	left: 550px;
+	top: 60px;
+}
+
+#ribbon2 {
+	/* ribbon on skydive.html page */
+	position: absolute;
+	top: 22px;
+	right: 345px;
+}
+
+#ribbon3 {
+	/* on portfolio page for bathymetric book */
+	position: absolute;
+	z-index: 1;
+	left: 237px;
+	top: 60px;
+}
+
+#ribbon4 {
+	/* on bathymetric book page */
+	position: absolute;
+	top: 22px;
+	right: 275px;
+}
+/* ================================== end Ribbon images ================================== */
+
+/*................................. About Me (index) Page .................................*/
+
+#aboutme_content{
+	width: 900px;
+	height: 515px;
+	position: relative;
+	display:block;
+}
+#aboutme_content a img{
+	position: absolute;
+	border: 0;
+}
+
+#aboutme_content a img:hover{
+	opacity: 0.5;
+}
+
+#aboutme_cart_link img{
+	top: 32px;
+	left: 308px;
+	
+}
+
+#aboutme_bookarts_link   img{
+	top: 335px;
+	left: 346px;
+		
+}
+
+#aboutme_outdoor_link  img{
+	top: 213px;
+	left: 593px;
+	
+}
+
+#aboutme_travel_link img{
+	position: absolute;
+	top: 173px;
+	left: 55px;
+}
+
+
+#aboutme_paddling_link img{
+	position: absolute;
+	top: 300px;
+	left: 13px;
+}
+
+.aboutme_footer   {
+	display: block;
+	left: auto;
+	right: auto;
+	position: relative;
+}
+/*................................. end About Me (index) Page .................................*/
+
+/*________________ Galleria Rules ________________*/
+#galleria  {
+	clear: left;
+	height: 450px;
+}
+
+
+/*________________ end Galleria Rules ________________*/
+
+/*~~~~~~~~~ rules for specific items on project pages ~~~~~~~~~ */
+#ridethedrive_image img {
+	margin-left: 242px;
+}
+
+#alnwicklink img {
+	margin-left: 200px;
+}
+

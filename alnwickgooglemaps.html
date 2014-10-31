@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Geog 572 Lab 3 Caroline Rose</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/cmrrstyle.css" />
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+	
+		<!-- Title image-->
+		<div id="title"><img src="img/title3.png" alt="Sites of Interest near Alnwick, England"/></div>
+		
+		<div id="intro">
+		<table width="900px">
+			<tr>
+				<td width="200px"></td>
+				<td width="500px">
+				<p>While there are many diverse attractions within the Alnwick Garden, <br/>
+					Alnwick's town and countryside offer even more, including historic <br/>
+					architecture, picturesque ruins, and beautiful parks. </p>
+				</td>
+				<td width="200px"></td>
+			</tr>
+		</table>	
+		</div>
+				
+		<!--LEGEND-->
+		<div id="legend"> 
+			<table width="100%">
+				<!--legend header-->
+				<tr>
+					<td colspan="2" width="250px"><h2>The Alnwick Gardens</h2></td>
+					<td colspan="2" width="250px"><h2>Historical Sites</h2></td>
+					<td colspan="2" width="250px"><h2>Other</h2></td>
+				</tr>
+				<!--legend content-->
+				<tr>
+					<td width="24px"><img src="img/pavillion.png" alt="Pavillion"/></td><td><p>Pavillion</p></td>
+					<td width="24px"><img src="img/castle.png" alt="Castle"/></td><td><p>Castles</p></td>
+					<td width="24px"><img src="img/tree.png" alt="Park"/></td><td><p>Parks</p></td>
+					
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/fountain20.png" alt="Grand Cascade"/></td><td><p>Grand Cascade</p></td>
+					<td width="24px"><img src="img/tower.png" alt="Towers"/></td><td><p>Towers</p></td>
+					<td width="24px"><img src="img/infoicon20.png" alt="Information"/></td><td><p>Information</p></td>
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/rose20.png" alt="Rose Garden"/></td><td><p>Rose Garden</p></td>
+					<td width="24px"><img src="img/church.png" alt="Churches"/></td><td><p>Churches</p></td>
+					<td colspan="2"><h2>Zoom to:</h2></td>
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/serpent.png" alt="Serpent Garden"/></td><td><p>Serpent Garden</p></td>
+					<td width="24px"><img src="img/bridge.png" alt="Bridges"/></td><td><p>Bridges</p></td>
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/ornamental20.png" alt="Ornamental Garden"/></td><td><p>Ornamental Garden</p></td>
+					<td width="24px"><img src="img/museum.png" alt="Museums"/></td><td><p>Museums</p></td>
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/skull20.png" alt="Poison Garden"/></td><td><p>Poison Garden</p></td>
+					<td width="24px"><img src="img/ruin.png" alt="Ruins"/></td><td><p>Ruins</p></td>
+				</tr>
+				<tr> 
+					<td width="24px"><img src="img/treehouse.png" alt="Treehouse"/></td><td><p>The Treehouse</p></td>
+					<td width="24px"><img src="img/flag.png" alt="History"/></td><td><p>Sites of Historic Importance</p></td>
+				</tr>
+			</table>
+		</div> <!--end legend div-->
+		
+		<div id="buttons">
+			<table width="900px"> 
+				<tr>
+					<td width=600></td>
+					<td width=300><img id="zoomCountry" src="img/alnwickandcountryside.png" width="200px" alt="Zoom to countryside"/></td>
+				</tr>
+				<tr>
+					<td width=600></td>
+					<td width=300><img id="zoomTown" src="img/townofalnwick.png" width="200px" alt="Zoom to town level"/></td>
+				</tr>
+			</table> 
+		</div><!--end buttons div-->
+		
+		
+		<div id="map">  <!-- map is placed within this div -->
+		
+		<a id="map"></a> <!--for scrolling to the map-->
+		
+		<script type="text/javascript">
+
+			var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 15,
+				center: new google.maps.LatLng(55.414053,-1.700527),
+				mapTypeId: google.maps.MapTypeId.SATELLITE
+			});
+
+			// populate an array with our data
+			var locations = [
+			
+				["AlnwickGardensPavillion",55.414053,-1.700527,"Pavillion","Open shelter with a view of the gardens and the Grand Cascade"],
+				["AlnwickGardensTreehouse",55.414379,-1.697764,"The Treehouse","The Alnwick Gardens' giant treehouse, featuring a restaurant"],
+				["AlnwickGardensRose",55.413815,-1.701368,"Rose Garden","A meandering garden full of roses"],
+				["AlnwickGardensCascade",55.412902,-1.700438,"Grand Cascade","The large, central fountains of the Alnwick Garden"],
+				["AlnwickGardensPoison",55.413404,-1.699882,"Poison Garden ","A guided-tours-only garden, which features plants like deadly nightshade "],
+				["AlnwickGardensOrnamental",55.412116,-1.700279,"Ornamental Garden","A geometrically arranged garden "],
+				["AlnwickGardensSerpent",55.413444,-1.701148,"Serpent Garden","A garden with a flowing, twisting layout featuring water sculptures"],
+				["Parks",55.416872,-1.717794,"Hulne Park","Vast property of woodland and countryside, crossed by footpaths"],
+				["Castle",55.415725,-1.706062,"Alnwick Castle","Over 800 years old, Alniwck is the 2nd largest inhabited castle in England. Open in the summer for tourist activities and exhibits"],
+				["Ruins",55.43492,-1.74395,"Hulne Priory","The ruins of a 13th century monastery "],
+				["Ruins",55.419797,-1.718977,"Remains of Alnwick Abbey","The remains of an Abbey founded in 1147"],
+				["Historical Landmarks",55.413394,-1.706912,"Marketplace","Alnwick's marketplace since medieval times, marked by a market cross"],
+				["Ruins",55.422998,-1.704442,"Ruins of St. Leonard's Hospital","Masonry from a late 12th century hospital"],
+				["BookShop",55.410085,-1.699072,"Barter Books","One of Britain's largest second-hand bookstores, occupying the former Victorian-era train station"],
+				["Churches",55.416933,-1.711056,"St. Michael's Church","The oldest church in Alnwick, remodeled in the 14th century"],
+				["Towers",55.412625,-1.703755,"Hotspur Tower ","The only remaining tower of the (incomplete) medieval city wall"],
+				["Towers",55.414989,-1.710816,"Pottergate Tower","An 18th century tower at the site of a tower of the medieval city wall"],
+				["Museums",55.416252,-1.709117,"Bailiffgate Museum","A former church and current local museum"],
+				["Museums",55.41602,-1.705357,"Royal Northumberland Fusiliers Museum","Museum documenting the history of the local military regiment"],
+				["Towers",55.426365,-1.751874,"Brizlee Tower","A 1781 folly, or decorative sturcture, built on the hunting grounds of the Duke of Northumberland"],
+				["ScoopShop",55.414991,-1.708445,"The Farmhouse Scoop Shop","buy bulk items by the scoop, including pasta, grains, and especially sweets"],
+				["Bridges",55.41792,-1.707441,"Lion Bridge","Gothic Revival style bridge built in 1773 over the River Aln"],
+				["Bridges",55.417847,-1.689654,"Denwick Bridge","Stone bridge built in 1766 over the River Aln"],
+				["Parks",55.418163,-1.703185,"The Pastures","Landscaped countryside with views of the River Aln and Alnwick Castle, site of the 2012 Olympic flame cauldron, a venue for outdoor concerts"],
+				["Towers",55.410912,-1.699178,"Tenantry Column","1816 monument given to the Duke of Northumberland by his tenants"],
+				["Historical Landmarks",55.412832,-1.703892,"White Swan Hotel","Features decor from the RMS Olympic, the Titanic's sister ship"],
+				["Historical Landmarks",55.426,-1.6999,"Malcolm's Cross","A carved stone cross marks the site of the death of Malcolm III 'Canmore' of Scotland in 1093"],
+				["Churches",55.411093,-1.706378,"St. Paul's Church","Mid 19th century Decorated Gothic church"],
+				["Churches",55.412325,-1.708328,"Methodist Chapel","The 1786 chapel whose cornerstone was laid by Methodist founder John Wesley"],
+				["Information",55.413158,-1.706856,"Tourist Information Centre","Local information for visitors"],
+
+				
+			];
+
+			var infowindow = new google.maps.InfoWindow();
+
+			var marker, i;
+						
+			for (i = 0; i < locations.length; i++) 
+			{
+				var iconImage, heading;
+				
+				switch(locations[i][0]) {
+					case "Parks":	
+						iconImage = "img/tree.png";
+						heading = "<h2 class='parks'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensPavillion":	
+						iconImage = "img/pavillion.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensSerpent":	
+						iconImage = "img/serpent.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensOrnamental":	
+						iconImage = "img/ornamental20.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensCascade":	
+						iconImage = "img/fountain20.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensPoison":	
+						iconImage = "img/skull20.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensRose":	
+						iconImage = "img/rose20.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "AlnwickGardensTreehouse":	
+						iconImage = "img/treehouse.png";
+						heading = "<h2 class='gardens'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Historical Landmarks":
+						iconImage = "img/flag.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Ruins":
+						iconImage = "img/ruin.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Museums":
+						iconImage = "img/museum.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Towers":
+						iconImage = "img/tower.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Castle":
+						iconImage = "img/castle.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Churches":
+						iconImage = "img/church.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Bridges":
+						iconImage = "img/bridge.png";
+						heading = "<h2 class='history'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "BookShop":
+						iconImage = "img/book.png";
+						heading = "<h2 class='shops'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "ScoopShop":
+						iconImage = "img/scoop.png";
+						heading = "<h2 class='shops'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+					case "Information":
+						iconImage = "img/infoicon20.png";
+						heading = "<h2 class='info'><img src="+iconImage+" />"+locations[i][3]+"</h2>";
+						break;
+				}
+				
+				marker = new google.maps.Marker({
+					icon: iconImage,
+					position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+					map: map
+				});
+				google.maps.event.addListener(marker, 'click', (function(marker, i, heading) {
+					return function() {
+						markerContent =	heading+"</h2><p><b>Description:</b> "+ locations[i][4]+"</p>";
+						infowindow.setContent(markerContent);
+						infowindow.open(map, marker);
+					}
+				})(marker, i, heading));  // end marker click function
+			}; // end for loop	
+			<!--buttons to reset zoom-->
+
+			document.getElementById("zoomTown").onclick = function(){
+					map.setZoom(15);
+					map.setCenter(new google.maps.LatLng(55.414053,-1.700527));
+				};
+			document.getElementById("zoomCountry").onclick = function(){
+					map.setZoom(13);
+					map.setCenter(new google.maps.LatLng(55.422998,-1.704442));
+				};
+
+		</script>
+		</div> <!--end map div-->
+	
+		<div id="links">
+			<table>
+				<tr>
+					<td width="290px"><p>The Alnwick Garden</p></td>
+					<td width="15px"></td>
+					<td width="290px"><p>Alnwick Tourism Association</p></td>
+					<td width="15px"></td>
+					<td width="290px"><p>Alnwick Castle</p></td>
+				</tr>
+				<tr>
+					<td width="290px"><a href="http://www.alnwickgarden.com/" target="_blank"> <img src="img/alnwickgardenlogo.png" alt="Alnwick Garden website"/></a></td>
+					<td width="15px"></td>
+					<td width="290px"><a href="http://www.visitalnwick.org.uk/index.htm" target="_blank"> <img src="img/visitalnwick.png" alt="Alnwick Tourism website"/></a></td>
+					<td width="15px"></td>
+					<td width="290px"><a href="http://www.alnwickcastle.com/" target="_blank"> <img src="img/alnwickcastlelogo.png" alt="Alnwick Castle website"/></a></td>
+				</tr>
+			</table>
+		</div><!--closes links div-->
+		
+		<footer> 
+		<p> Caroline Rose 2012 </p>
+		</footer> 
+	
+	</div><!-- end wrapper div-->	
+	
+</body>
+</html>

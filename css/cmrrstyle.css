@@ -1,0 +1,136 @@
+body {
+	background-color: #c69c6d;
+	background-image: url(../img/wall2.png);
+	background-repeat: center;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: Nyala, serif;
+	color: #333;
+	text-decoration: none;
+}
+h1 {
+	font-size: 1.6em;
+	color: white;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: black;
+	padding: 0;
+	margin: 0;
+}
+p {
+	font-size: 1.1em;
+	color: #000000;
+	padding: 0;
+	margin: 2px 0 3px;
+	width: 50 px;
+}
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto 0 auto;
+}
+#title {
+	position:relative;
+}
+
+/*#intro p {
+	position:absolute;
+	top:230px;
+	text-align: center;
+	right:auto;
+	left:auto;
+}*/
+#intro table {
+	position:absolute;
+	top:200px;
+}
+
+#intro table  p{
+	text-align:center;
+}
+
+#legend  table{
+	padding: 0px 60px;
+	margin-right: auto;
+	margin-left: auto;
+	position:absolute;
+	top: 300px;
+	width: 900px;
+	
+}
+#legend table{
+	
+}
+#buttons table{
+	/*padding-top: 20px;*/
+	position:absolute;
+	top:420px;
+}
+
+
+#buttons img:hover{
+	opacity: 0.8;
+}
+
+#map {
+	width: 100%;
+	height: 550px;
+	border: 1px solid black;
+	position:block;
+}
+
+
+
+.button{
+	border: 3px solid black;
+}
+
+.title{
+	color: 000000;
+	font-size: 2.0em;
+	text-align:center;
+}
+
+.intro{
+	text-align:center;
+	font-size: 1.1em;
+	padding-bottom: 20px;
+}
+
+.info {
+	color: #0000ff;
+}
+
+.shops {
+	color: #E41A1C;
+}
+.history {
+	color: #a62f14;
+}
+.parks {
+	color: #078926;
+}
+.history img,.parks img, .gardens img, .shops img,.info img, .bridges img {
+	margin-right: 8px;
+}
+.gardens{
+	color: #00d472;
+}
+
+#links{
+	padding-top:20px;
+}
+#links a img:hover{
+	opacity: 0.7;
+}
+
+footer{ 
+	padding-top: 30px;
+}
+
+footer p {
+	text-align: center;
+}
