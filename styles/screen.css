@@ -180,35 +180,33 @@ table a:hover {
 }
 
 /* ================================== Ribbon images ================================== */
-#ribbon {
-	/* on portfolio page for skydiving map */
+#ribbon1 {
+	/* on portfolio page for sandy map */
 	position: absolute;
 	z-index: 1;
-	left: 550px;
+	left: 245px;
 	top: 60px;
 }
 
 #ribbon2 {
-	/* ribbon on skydive.html page */
+	/* on portfolio page for skydiving map */
 	position: absolute;
-	top: 22px;
-	right: 345px;
+	z-index: 1;
+	left: 245px;
+	top: 375px;
 }
 
 #ribbon3 {
 	/* on portfolio page for bathymetric book */
 	position: absolute;
 	z-index: 1;
-	left: 237px;
-	top: 60px;
+	right: -40px;
+	top: 375px;
 }
 
-#ribbon4 {
-	/* on bathymetric book page */
-	position: absolute;
-	top: 22px;
-	right: 275px;
-}
+
+
+
 /* ================================== end Ribbon images ================================== */
 
 /*................................. About Me (index) Page .................................*/
