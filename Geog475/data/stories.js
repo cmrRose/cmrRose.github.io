@@ -123,7 +123,7 @@ var storiesArray = [ //storiesArray is an array.
 	"placeCode":"020"
 },
 {	"title":"One of my favorite cities", 
-	"story":"After our travels in Europe when I was 12 years old, the two cities I thought I would most like in someday were Copenhagen and Rome.",
+	"story":"After our travels in Europe when I was 12 years old, the two cities I thought I would most like to live in someday were Copenhagen and Rome.",
 	"placeCode":"020"
 },
 {	"title":"Skiing", 
@@ -131,7 +131,7 @@ var storiesArray = [ //storiesArray is an array.
 	"placeCode":"021"
 },
 {	"title":"One of my favorite cities", 
-	"story":"After our travels in Europe when I was 12 years old, the two cities I thought I would most like in someday were Copenhagen and Rome.",
+	"story":"After our travels in Europe when I was 12 years old, the two cities I thought I would most like to live in someday were Copenhagen and Rome.",
 	"placeCode":"022"
 },
 {	"title":"Laundry day", 
@@ -167,7 +167,7 @@ var storiesArray = [ //storiesArray is an array.
 	"placeCode":"029"
 },
 {	"title":"Trains", 
-	"story":"I visited both Rabat and Marrakech via train",
+	"story":"While the ship docked in Casablanca, I visited both Rabat and Marrakech via train",
 	"placeCode":"030"
 },
 {	"title":"Canopy Walk", 
@@ -198,10 +198,7 @@ var storiesArray = [ //storiesArray is an array.
 	"story":"We took public buses out to further cities, such as Mahabalipuram and Kanchipuram. Within the cities, we took motorized rickshaw taxis.",
 	"placeCode":"036"
 },
-{	"title":"Transportation", 
-	"story":"We took public buses out to further cities, such as Mahabalipuram and Kanchipuram. Within the cities, we took motorized rickshaw taxis.",
-	"placeCode":"036"
-},
+
 
 
 
