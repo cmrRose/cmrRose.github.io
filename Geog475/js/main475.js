@@ -49,7 +49,7 @@ function initialize(){
 	// Provide your access token
 	L.mapbox.accessToken = 'pk.eyJ1IjoiY2Fyb2xpbmVyb3NlIiwiYSI6Ik55TUFmMVEifQ.ybZm7IghE2N0ezsMfaDNFQ';
 	// Create a map in the div #map
-	map = L.mapbox.map('map', 'carolinerose.kemm00ah').setView([44.836229, -91.484361], 6);
+	map = L.mapbox.map('map', 'carolinerose.kemm00ah').setView([20, -0], 2);
 	
 	L.control.zoom();
 	//worldCopyJump?
