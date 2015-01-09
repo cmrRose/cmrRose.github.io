@@ -35,7 +35,7 @@ var storiesArray = [ //storiesArray is an array.
 	"story":"My sister slept in an alcove next to the window, completely within the approximately 6 ft thickness of the original wall.","placeCode":"004"
 },
 {	"title":"Living in England Again", 
-	"story":"We spent the summer in Alnwick again when I was 18, immediately after I graduated from high school.", "placeCode":"004"
+	"story":"We spent the a few months in Alnwick again when I was 18, immediately after I graduated from high school.", "placeCode":"004"
 },
 {	"title":"Lightning Strikes", 
 	"story":"One of the closest encounter I had with a lightning bolt happened in between canoe trips at the canoe base.",

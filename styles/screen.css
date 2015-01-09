@@ -54,8 +54,45 @@ nav ul li a:hover {
 }
 
 /*----------------end rules for parts of header----------------*/
+/*----------------- tooltip rules ------------------------*/
+.tooltip{
+	display: inline;
+	position:relative;
+}
+.tooltip:hover:after{
+	background: #333;
+	background: rgba(0,0,0,0.8);
+	bottom: 26px;
+	color: #fff;
+	content:attr(title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 1;
+	width: 150px;
+}
+
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
+
+/*----------------- end tooltip rules ------------------------*/
+
 
 /* ~~~~~~~~~ rules for content div ~~~~~~~~~ */
+
+
+
+
+
 #content {
 	display:block;
 	margin: 40px auto 0 auto;
