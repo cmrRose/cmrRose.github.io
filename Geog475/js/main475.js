@@ -63,10 +63,10 @@ function initialize(){
 
  
 function storiesMarkers(data){
-	//L.geoJSON
+
 	var mygeoJSONStoryPointsLayer = L.geoJson(data, {
 		pointToLayer: function(feature, latlng){
-			return L.marker(latlng, {icon: bookIcon});
+			return L.marker(latlng);
 		},
 		onEachFeature: onEachFeature
 	
