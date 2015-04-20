@@ -66,7 +66,7 @@ function storiesMarkers(data){
 
 	var mygeoJSONStoryPointsLayer = L.geoJson(data, {
 		pointToLayer: function(feature, latlng){
-			return L.marker(latlng);
+			return L.marker(latlng, {icon: bookIcon});
 		},
 		onEachFeature: onEachFeature
 	
