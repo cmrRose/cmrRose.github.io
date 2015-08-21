@@ -17,6 +17,17 @@ h2{
 height: 500px; 
 }
 
+#info_box{
+	position: fixed;
+	top: 0px; 
+	right: 55px;
+	z-index: 1;
+	color: white;
+	background-color: grey;
+	padding: 3px;
+	
+}
+
 .divIcon{
 	margin-top: -15px;
 	

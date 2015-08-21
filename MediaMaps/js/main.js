@@ -1,6 +1,6 @@
 //Global Variables: 
 var map;
-
+var infobox = document.getElementById("info_box");
 
 //the variable bookIcon is a divIcon that contains the book image. 
 var bookIcon = L.divIcon({
@@ -50,7 +50,7 @@ function extentMarkers(data){
 	
 	var myExtentsLayer = L.geoJson(data, {
 		
-		style: stylePolygons,		
+		style: stylePolygons(),		
 		onEachFeature: onEachFeature
 	
 	}).addTo(map);
@@ -59,7 +59,9 @@ function extentMarkers(data){
 } 
 
 function stylePolygons (){
-	
+/*	if (feature.properties.Map_Extent_Code in (Map_extent013, Map_extent022, Map_extent021, Map_extent018)) {
+		return{color:"red", fill: false, opeacity:0.7, weight:2}
+	} else */
 	return{color:"blue", fill:false, opacity:0.7, weight:2};
 	
 }
@@ -69,15 +71,20 @@ function onEachFeature(feature, layer){
 	layer.on({
 		click: function(){
 			console.log(feature.properties.Map_Extent_Code+", "+feature.properties.Area_km2);
+			
 		},
 		mouseover: function(e){
 			//console.log(feature.properties.Map_Extent_Code+" highlight");
+			
+			infobox.innerHTML = "<h3>"+feature.properties.Map_Extent_Code+" is  highlighted</h3>";
+			
 			this.setStyle({
 				color:"yellow", weight:5
 			});
 		},
 		mouseout: function(){
 			//console.log(feature.properties.Map_Extent_Code+" dehighlight");
+			infobox.innerHTML = "";
 			this.setStyle({
 				color:"blue", weight:2
 			});
