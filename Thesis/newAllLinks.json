@@ -11,12 +11,12 @@
     "value":1
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Cartographic Interaction",
     "value":1
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Human Resources",
     "value":1
   },
@@ -27,26 +27,26 @@
   },
   {
     "source":"Geocollaboration- different/different",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":1
   },
   {
-    "source":"Geocollaboration- same place/different time",
+    "source":"Geocollaboration- same-place/different-time",
     "target":"Geographic Info",
     "value":1
   },
   {
-    "source":"Geocollaboration- same place/different time",
-    "target":"Hardware / Physical / Form Factor",
+    "source":"Geocollaboration- same-place/different-time",
+    "target":"Hardware/Form Factor",
     "value":1
   },
   {
-    "source":"Geocollaboration- same place/different time",
+    "source":"Geocollaboration- same-place/different-time",
     "target":"Institutional",
     "value":1
   },
   {
-    "source":"Geocollaboration- same place/different time",
+    "source":"Geocollaboration- same-place/different-time",
     "target":"Other Nonfunctional requirements",
     "value":1
   },
@@ -62,7 +62,7 @@
   },
   {
     "source":"Geocollaboration- same/same",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":1
   },
   {
@@ -97,7 +97,7 @@
   },
   {
     "source":"Producing map products",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":1
   },
   {
@@ -117,7 +117,7 @@
   },
   {
     "source":"Reference Use",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":1
   },
   {
@@ -137,7 +137,7 @@
   },
   {
     "source":"not-problem / advantage /pro",
-    "target":"Geocollaboration- same place/different time",
+    "target":"Geocollaboration- same-place/different-time",
     "value":1
   },
   {
@@ -147,7 +147,7 @@
   },
   {
     "source":"problem / limitation / con",
-    "target":"Geocollaboration- same place/different time",
+    "target":"Geocollaboration- same-place/different-time",
     "value":1
   },
   {
@@ -181,18 +181,18 @@
     "value":2
   },
   {
-    "source":"Geocollaboration- different place / same time",
-    "target":"Hardware / Physical / Form Factor",
+    "source":"Geocollaboration- different-place/same-time",
+    "target":"Hardware/Form Factor",
     "value":2
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Other mapping function",
     "value":2
   },
   {
-    "source":"Geocollaboration- different place / same time",
-    "target":"Usability / Ease of Use",
+    "source":"Geocollaboration- different-place/same-time",
+    "target":"Usability",
     "value":2
   },
   {
@@ -216,13 +216,13 @@
     "value":2
   },
   {
-    "source":"Geocollaboration- same place/different time",
+    "source":"Geocollaboration- same-place/different-time",
     "target":"Cartographic Interaction",
     "value":2
   },
   {
     "source":"Map Product Use",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":2
   },
   {
@@ -232,7 +232,7 @@
   },
   {
     "source":"Map Product Use",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":2
   },
   {
@@ -267,7 +267,7 @@
   },
   {
     "source":"Data Analytics",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":3
   },
   {
@@ -312,7 +312,7 @@
   },
   {
     "source":"Producing map products",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":4
   },
   {
@@ -322,7 +322,7 @@
   },
   {
     "source":"Reference Use",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":4
   },
   {
@@ -342,7 +342,7 @@
   },
   {
     "source":"Gathering Situation Inputs",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":5
   },
   {
@@ -351,7 +351,7 @@
     "value":5
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Connectivity",
     "value":5
   },
@@ -432,7 +432,7 @@
   },
   {
     "source":"suggestion",
-    "target":"Geocollaboration- same place/different time",
+    "target":"Geocollaboration- same-place/different-time",
     "value":7
   },
   {
@@ -441,7 +441,7 @@
     "value":8
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Efficiency",
     "value":8
   },
@@ -471,13 +471,13 @@
     "value":9
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Cost",
     "value":9
   },
   {
     "source":"Geocollaboration- same/same",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":9
   },
   {
@@ -497,11 +497,11 @@
   },
   {
     "source":"suggestion",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":9
   },
   {
-    "source":"Geocollaboration- different place / same time",
+    "source":"Geocollaboration- different-place/same-time",
     "target":"Visual Representation",
     "value":10
   },
@@ -532,7 +532,7 @@
   },
   {
     "source":"Gathering Situation Inputs",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":11
   },
   {
@@ -567,7 +567,7 @@
   },
   {
     "source":"not-problem / advantage /pro",
-    "target":"Geocollaboration- different place / same time",
+    "target":"Geocollaboration- different-place/same-time",
     "value":12
   },
   {
@@ -597,7 +597,7 @@
   },
   {
     "source":"current use",
-    "target":"Geocollaboration- same place/different time",
+    "target":"Geocollaboration- same-place/different-time",
     "value":14
   },
   {
@@ -607,7 +607,7 @@
   },
   {
     "source":"problem / limitation / con",
-    "target":"Geocollaboration- different place / same time",
+    "target":"Geocollaboration- different-place/same-time",
     "value":14
   },
   {
@@ -622,7 +622,7 @@
   },
   {
     "source":"not-problem / advantage /pro",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":16
   },
   {
@@ -632,7 +632,7 @@
   },
   {
     "source":"problem / limitation / con",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":16
   },
   {
@@ -662,7 +662,7 @@
   },
   {
     "source":"not-problem / advantage /pro",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":19
   },
   {
@@ -757,7 +757,7 @@
   },
   {
     "source":"problem / limitation / con",
-    "target":"Hardware / Physical / Form Factor",
+    "target":"Hardware/Form Factor",
     "value":31
   },
   {
@@ -766,18 +766,18 @@
     "value":33
   },
   {
-    "source":"GIS",
+    "source":"GIS software",
     "target":"not-problem / advantage /pro",
     "value":36
   },
   {
     "source":"current use",
-    "target":"Geocollaboration- different place / same time",
+    "target":"Geocollaboration- different-place/same-time",
     "value":36
   },
   {
     "source":"suggestion",
-    "target":"Usability / Ease of Use",
+    "target":"Usability",
     "value":37
   },
   {
@@ -787,7 +787,7 @@
   },
   {
     "source":"suggestion",
-    "target":"Geocollaboration- different place / same time",
+    "target":"Geocollaboration- different-place/same-time",
     "value":38
   },
   {
@@ -836,7 +836,7 @@
     "value":44
   },
   {
-    "source":"Multiple/General",
+    "source":"General Mapping Tech.",
     "target":"not-problem / advantage /pro",
     "value":45
   },
@@ -846,7 +846,7 @@
     "value":45
   },
   {
-    "source":"GIS",
+    "source":"GIS software",
     "target":"suggestion",
     "value":47
   },
@@ -901,7 +901,7 @@
     "value":66
   },
   {
-    "source":"Multiple/General",
+    "source":"General Mapping Tech.",
     "target":"current use",
     "value":71
   },
@@ -911,7 +911,7 @@
     "value":72
   },
   {
-    "source":"GIS",
+    "source":"GIS software",
     "target":"current use",
     "value":78
   },
@@ -921,7 +921,7 @@
     "value":87
   },
   {
-    "source":"GIS",
+    "source":"GIS software",
     "target":"problem / limitation / con",
     "value":90
   },
@@ -941,12 +941,12 @@
     "value":104
   },
   {
-    "source":"Multiple/General",
+    "source":"General Mapping Tech.",
     "target":"suggestion",
     "value":127
   },
   {
-    "source":"Multiple/General",
+    "source":"General Mapping Tech.",
     "target":"problem / limitation / con",
     "value":129
   }
@@ -974,7 +974,7 @@
         "name": "Efficiency"
     },
     {
-        "name": "GIS"
+        "name": "GIS software"
     },
     {
         "name": "GIS Functions"
@@ -986,13 +986,13 @@
         "name": "Gathering Situation Inputs"
     },
     {
-        "name": "Geocollaboration- different place / same time"
+        "name": "Geocollaboration- different-place/same-time"
     },
     {
         "name": "Geocollaboration- different/different"
     },
     {
-        "name": "Geocollaboration- same place/different time"
+        "name": "Geocollaboration- same-place/different-time"
     },
     {
         "name": "Geocollaboration- same/same"
@@ -1001,7 +1001,7 @@
         "name": "Geographic Info"
     },
     {
-        "name": "Hardware / Physical / Form Factor"
+        "name": "Hardware/Form Factor"
     },
     {
         "name": "Human Resources"
@@ -1019,7 +1019,7 @@
         "name": "Mobile App"
     },
     {
-        "name": "Multiple/General"
+        "name": "General Mapping Tech."
     },
     {
         "name": "Other Nonfunctional requirements"
@@ -1043,7 +1043,7 @@
         "name": "Reference Use"
     },
     {
-        "name": "Usability / Ease of Use"
+        "name": "Usability"
     },
     {
         "name": "Visual Representation"
