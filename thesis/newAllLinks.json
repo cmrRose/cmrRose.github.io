@@ -406,7 +406,7 @@
     "value":7
   },
   {
-    "source":"Mobile App",
+    "source":"Mobile apps",
     "target":"current use",
     "value":7
   },
@@ -646,7 +646,7 @@
     "value":17
   },
   {
-    "source":"Desktop program",
+    "source":"Desktop programs (not-GIS)",
     "target":"suggestion",
     "value":18
   },
@@ -681,12 +681,12 @@
     "value":20
   },
   {
-    "source":"Mobile App",
+    "source":"Mobile apps",
     "target":"not-problem / advantage /pro",
     "value":21
   },
   {
-    "source":"GPS",
+    "source":"GPS devices",
     "target":"not-problem / advantage /pro",
     "value":22
   },
@@ -701,7 +701,7 @@
     "value":22
   },
   {
-    "source":"Web Map",
+    "source":"Web maps",
     "target":"not-problem / advantage /pro",
     "value":22
   },
@@ -726,7 +726,7 @@
     "value":26
   },
   {
-    "source":"Desktop program",
+    "source":"Desktop programs (not-GIS)",
     "target":"not-problem / advantage /pro",
     "value":27
   },
@@ -751,7 +751,7 @@
     "value":30
   },
   {
-    "source":"Web Map",
+    "source":"Web maps",
     "target":"current use",
     "value":31
   },
@@ -801,7 +801,7 @@
     "value":40
   },
   {
-    "source":"Desktop program",
+    "source":"Desktop programs (not-GIS)",
     "target":"problem / limitation / con",
     "value":42
   },
@@ -816,12 +816,12 @@
     "value":42
   },
   {
-    "source":"GPS",
+    "source":"GPS devices",
     "target":"suggestion",
     "value":43
   },
   {
-    "source":"Web Map",
+    "source":"Web maps",
     "target":"suggestion",
     "value":43
   },
@@ -831,7 +831,7 @@
     "value":43
   },
   {
-    "source":"Mobile App",
+    "source":"Mobile apps",
     "target":"suggestion",
     "value":44
   },
@@ -861,12 +861,12 @@
     "value":48
   },
   {
-    "source":"Desktop program",
+    "source":"Desktop programs (not-GIS)",
     "target":"current use",
     "value":50
   },
   {
-    "source":"Web Map",
+    "source":"Web maps",
     "target":"problem / limitation / con",
     "value":50
   },
@@ -876,12 +876,12 @@
     "value":55
   },
   {
-    "source":"Mobile App",
+    "source":"Mobile apps",
     "target":"problem / limitation / con",
     "value":58
   },
   {
-    "source":"GPS",
+    "source":"GPS devices",
     "target":"current use",
     "value":61
   },
@@ -916,7 +916,7 @@
     "value":78
   },
   {
-    "source":"GPS",
+    "source":"GPS devices",
     "target":"problem / limitation / con",
     "value":87
   },
@@ -968,7 +968,7 @@
         "name": "Data Analytics"
     },
     {
-        "name": "Desktop program"
+        "name": "Desktop programs (not-GIS)"
     },
     {
         "name": "Efficiency"
@@ -980,7 +980,7 @@
         "name": "GIS Functions"
     },
     {
-        "name": "GPS"
+        "name": "GPS devices"
     },
     {
         "name": "Gathering Situation Inputs"
@@ -1016,7 +1016,7 @@
         "name": "Map Product Use"
     },
     {
-        "name": "Mobile App"
+        "name": "Mobile apps"
     },
     {
         "name": "General Mapping Tech."
@@ -1049,7 +1049,7 @@
         "name": "Visual Representation"
     },
     {
-        "name": "Web Map"
+        "name": "Web maps"
     },
     {
         "name": "current use"
