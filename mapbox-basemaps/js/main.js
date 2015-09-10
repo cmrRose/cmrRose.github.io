@@ -23,6 +23,8 @@ function initialize(){
     var basemaps =  L.control.layers(
         {
             'Mapbox Satellite': L.mapbox.tileLayer('mapbox.satellite').addTo(map), 
+			'Mapbox Light': L.mapbox.tileLayer('mapbox.light'),
+			'Mapbox Dark': L.mapbox.tileLayer('mapbox.dark'),
             'Mapbox Outdoors': L.mapbox.tileLayer('mapbox.outdoors'), 
             'Mapbox Run-Bike-Hike': L.mapbox.tileLayer('mapbox.run-bike-hike'),
             'Mapbox Emerald': L.mapbox.tileLayer('mapbox.emerald'),
@@ -32,7 +34,7 @@ function initialize(){
             'Mapbox Pencil': L.mapbox.tileLayer('mapbox.pencil'), 
             'Mapbox High Contrast': L.mapbox.tileLayer('mapbox.high-contrast'),
             'Mapbox Streets-Basic': L.mapbox.tileLayer('mapbox.streets-basic'),
-            'Mapbox wheatpaste': L.mapbox.tileLayer('mapbox.wheatpaste'),
+            'Mapbox Wheatpaste': L.mapbox.tileLayer('mapbox.wheatpaste'),
             'Mapbox Pirates': L.mapbox.tileLayer('mapbox.pirates') 
             
             
