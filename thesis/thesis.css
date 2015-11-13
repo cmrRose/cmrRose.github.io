@@ -57,10 +57,9 @@ h5{
     height: auto;
 }
 .navButton{
-   
     font-size: .8em;
     text-decoration: none; 
-    padding: 3px 5px;
+    padding: 3px 0px;
     height: auto;
     margin-top: 5px;
     margin-right: 5px;
@@ -69,6 +68,12 @@ h5{
 
 p {
  text-align: left;
+}
+
+.topmargin20 {
+ margin-top: 20px;   
+}
+
 }
 
 /*  SECTIONS  */
@@ -97,22 +102,27 @@ p {
 .span_2_of_3 { width: 66.13%; }
 .span_1_of_3 { width: 32.26%; }
 
+/*  GRID OF FOUR  */
+.span_4_of_4 {width: 100%;}
+.span_3_of_4 {width: 74.6%;}
+.span_2_of_4 {width: 49.2%;}
+.span_1_of_4 {width: 23.8%;}
+
+
 /*  GRID OF FIVE  */
-.span_5_of_5 {
-	width: 100%;
-}
-.span_4_of_5 {
-	width: 79.68%;
-}
-.span_3_of_5 {
-	width: 59.36%;
-}
-.span_2_of_5 {
-	width: 39.04%;
-}
-.span_1_of_5 {
-	width: 18.72%;
-}
+.span_5_of_5 {width: 100%;}
+.span_4_of_5 {width: 79.68%;}
+.span_3_of_5 {width: 59.36%;}
+.span_2_of_5 {width: 39.04%;}
+.span_1_of_5 {width: 18.72%;}
+
+/*  GRID OF SIX  */
+.span_6_of_6 {width: 100%;}
+.span_5_of_6 {width: 83.06%;}
+.span_4_of_6 {width: 66.13%;}
+.span_3_of_6 {width: 49.2%;}
+.span_2_of_6 {width: 32.26%;}
+.span_1_of_6 {width: 15.33%;}
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {

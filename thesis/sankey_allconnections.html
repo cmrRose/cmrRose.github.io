@@ -46,7 +46,7 @@ body.a{
         
         <div class="section group">
             <!-- <div class="col span_1_of_5">-->
-            <div class="col span_1_of_3"> 
+            <div class="col span_1_of_4"> 
             
                 <a style="text-decoration: none;" href="index.html">
                     <div class="navButton button">
@@ -57,30 +57,24 @@ body.a{
                 </a>
             </div>
             
-  <!--          <div class="col span_1_of_5">
-                <a style="text-decoration: none;" href="mappingtools.html">
-                    <div class="navButton button">
-                       Mapping Software         
-                    </div>
-                </a>
-            </div>-->
-            <!-- <div class="col span_1_of_5">-->
-            <div class="col span_1_of_3"> 
+            
+            <div class="col span_1_of_4"> 
                 <a style="text-decoration: none;" href="sankey_allconnections.html">
                     <div class="navButton button">
                         Diagram           
                     </div>
                 </a>
             </div>
-   <!--         <div class="col span_1_of_5">
-                <a style="text-decoration: none;" href="thesis_related.html">
+            
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="summary.html">
                     <div class="navButton button">
-                        Related research         
+                        Summary by tech         
                     </div>
                 </a>
-            </div>-->
-            <!-- <div class="col span_1_of_5">-->
-            <div class="col span_1_of_3"> 
+            </div>
+  
+            <div class="col span_1_of_4"> 
                 <a style="text-decoration: none;" href="http://wisarandgis.blogspot.com/" target="_blank">
                     <div class="navButton button">
                         visit the SARGIS Blog          
@@ -190,9 +184,10 @@ body.a{
                     )
               .style("stroke", function(d) { 
                   return d3.rgb(d.color).darker(2); })
-            .append("title")
-              .text(function(d) { 
-                  return d.name + "\n" + format(d.value); });
+                //.on("mouseover", function(){console.log("hover");})
+                .append("title")
+                    .text(function(d) { 
+                    return d.name + "\n" + format(d.value); });
 
         // add in the title for the nodes
           node.append("text")
