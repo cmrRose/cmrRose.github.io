@@ -1,0 +1,137 @@
+body{
+	color: #888;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333131;
+	width:1000px;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 20px;
+    text-align: center;
+}
+h2{
+    
+}
+.description{
+    text-align: left;
+    display: inline-block;
+    font-size: 0.9em;
+    
+}
+.link{
+    text-decoration: underline;
+    color: #888;
+    
+}
+
+.button{
+  
+    background-color: grey;
+    background-position: center;
+    border-radius: 10px;
+    font-weight: 900;
+    color: black;
+    height: 70px;
+    padding-top: 30px; 
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    
+    /*line-height: 90px;  */
+    text-transform:uppercase;
+    text-shadow:0px 0px 10px #fff;
+      
+}
+
+
+.button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.button.a{
+     text-decoration: none;
+}
+h5{
+    
+}
+
+.navButtonsGroup{
+    
+    /*position:absolute;*/
+   
+    padding: 3px 3px;
+    height: auto;
+}
+.navButton{
+    font-size: .8em;
+    text-decoration: none; 
+    padding: 3px 0px;
+    height: auto;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+p {
+ text-align: left;
+}
+
+.topmargin20 {
+ margin-top: 20px;   
+}
+
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF THREE  */
+.span_3_of_3 { width: 100%; }
+.span_2_of_3 { width: 66.13%; }
+.span_1_of_3 { width: 32.26%; }
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {width: 100%;}
+.span_3_of_4 {width: 74.6%;}
+.span_2_of_4 {width: 49.2%;}
+.span_1_of_4 {width: 23.8%;}
+
+
+/*  GRID OF FIVE  */
+.span_5_of_5 {width: 100%;}
+.span_4_of_5 {width: 79.68%;}
+.span_3_of_5 {width: 59.36%;}
+.span_2_of_5 {width: 39.04%;}
+.span_1_of_5 {width: 18.72%;}
+
+/*  GRID OF SIX  */
+.span_6_of_6 {width: 100%;}
+.span_5_of_6 {width: 83.06%;}
+.span_4_of_6 {width: 66.13%;}
+.span_3_of_6 {width: 49.2%;}
+.span_2_of_6 {width: 32.26%;}
+.span_1_of_6 {width: 15.33%;}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin: 1% 0 1% 0%; }
+	.span_1_of_5, .span_2_of_5, .span_3_of_5, .span_4_of_5, .span_5_of_5 { width: 100%; }
+    
+}    

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>Thesis: Summary</title>
+     <link rel="stylesheet" href="thesis.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+
+body.a{
+    color: #888;
+    text-decoration: underline;
+}
+
+#chart svg{
+    background-color: white;
+}
+ 
+.node rect {
+  cursor: ns-resize;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+ 
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+ 
+.link:hover {
+  stroke-opacity: .5;
+}
+ 
+</style>
+
+</head>
+<body>
+    <div id="content">
+    
+        
+        <div class="section group">
+            <!-- <div class="col span_1_of_5">-->
+            <div class="col span_1_of_4"> 
+            
+                <a style="text-decoration: none;" href="index.html">
+                    <div class="navButton button">
+                        <!--<img src="backarrow_black.png" id="backarrow">-->
+                        home
+                    </div>
+
+                </a>
+            </div>
+            
+          <div class="col span_1_of_4">
+                <a style="text-decoration: none;" href="sankey_allconnections.html">
+                    <div class="navButton button">
+                         Diagram        
+                    </div>
+                </a>
+            </div>
+           
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="summary.html">
+                    <div class="navButton button">
+                        Summary by tech         
+                    </div>
+                </a>
+            </div>
+  
+          
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="http://wisarandgis.blogspot.com/" target="_blank">
+                    <div class="navButton button">
+                        visit the SARGIS Blog          
+                    </div>
+                </a>
+            </div>
+        </div>
+       <!--end navButtonsGroup div-->
+        
+        <h2>Mapping Technology in Wilderness Search and Rescue: <br>summary by technology</h2>
+            <p class="description">A brief summary of some key advantages, limitations, and suggestions for improvement across six types of mapping technology. <br>Taken from Table 19, pg. 85-86</p>
+        
+ <!--      <div class="section group topmargin20">
+            <div class="col span_1_of_6 navButton button" onclick="displayTechDetails(printSummary);">
+                       print maps
+            </div>
+       
+        
+            <div class="col span_1_of_6 navButton button" onclick="displayTechDetails(GPSSummary);">
+                       GPS devices
+            </div>
+            
+            <div class="col span_1_of_6 navButton button">
+                       GIS Software 
+            </div>
+
+            <div class="col span_1_of_6 navButton button">
+                        Desktop Mapping software
+            </div>
+           
+            <div class="col span_1_of_6 navButton button">
+                       Web maps
+            </div>
+                        
+            <div class="col span_1_of_6 navButton button">
+                       mobile apps
+            </div>
+            
+        </div>-->
+        
+        
+        <div id="tech_details">
+        <img src="techSummaryTable.png" alt="tech_summary_table" class="topmargin20">
+            
+      
+        
+        </div><!--END TECH_details div-->
+        
+        <!--script to add event listeners for individual tech buttons-->
+       <!-- <script src="summary.js"></script>-->
+        
+
+    </div><!--end content div--> 
+</body>
+</html>

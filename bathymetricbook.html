@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<title>Caroline Rose | Bathymetric Book</title>
+
+	<!--Link to CSS style sheet-->
+	<link href="styles/screen.css" rel="stylesheet" type="text/css" />
+	
+	<!-- load jQuery -->
+	<script src="js/jquery/jquery-1.9.0.min.js"></script>
+
+	<!-- load Galleria -->
+	<script src="js/galleria-1.2.9.min.js"></script>
+	
+</head>
+
+<!--VISIBILE WEBSITE CONTENT-->
+<body>
+	<div id="wrapper">
+			
+		<header><!--Banner at top of page-->
+			<h1><a href="index.html">Caroline Rose</a></h1>
+			<!--Navigation menu-->
+			<nav>
+				<ul>
+					<!--<li><a href="index.html">home</a> | </li>-->
+					<li><a href="index.html">portfolio</a> | </li>
+					<li><a href="about.html">about</a> | </li>
+					<li><a href="resume.html">rèsumè</a></li>
+					<!--<li><a href="contact.html">contact</a></li>-->
+			
+				</ul>
+			
+			</nav>
+		</header>
+
+		<div id="content"><!--content between header and footer-->
+
+			<table>
+				<tr>
+					<td class="width40"><a href="alnwick.html"><p>prev</p></a></td>
+					<td class="width820"><h2 class="center_me">Bathymetric Book</h2></td>
+					<td class="width40"><a href="index.html"><p>portfolio</p></a></td>
+				</tr>
+			</table>
+
+	
+
+			<p class="description">A relief map in book form, showing the underwater contours of Crater Lake in Oregon. The vertical and horizontal scales are identical, making it a scale model of the lake floor. This book earned several awards, including the <strong>Barbara Bartz Petchenik Undergraduate Award in Cartography</strong>for 2012-2013 from the UW-Madison Geography Department.<br/>
+			<span class="underline_me"><a href="https://www.youtube.com/watch?v=Oc358-mBau8" target="_blank">Click here to view the "Making Of" video.</a></span> 
+        <br/>
+        <span class="underline_me"><a href="https:/bathymetricbook.blogspot.com" target="_blank">This blog documents the ongoing project.</a></span></p>
+
+			<div id="galleria">
+				
+				<img src="images/book1.gif" height="323" width="430" alt="book1" />
+				<img src="images/book2.gif" height="323" width="430" alt="book2" />
+				<img src="images/book3.gif" height="323" width="430" alt="book3" />
+				<img src="images/book4.gif" height="323" width="430" alt="book4" />
+				<img src="images/book55.gif" height="323" width="430" alt="book55" />
+				<img src="images/book5.gif" height="323" width="430" alt="book5" />
+				<img src="images/book6.gif" height="323" width="430" alt="book6" />
+				<img src="images/book7.gif" height="323" width="430" alt="book7" />
+				<img src="images/book8.gif" height="323" width="430" alt="book8" />
+				<img src="images/book10.gif" height="323" width="430" alt="book10" />
+				
+			</div>
+			
+			<!--Slideshow javascript links-->
+			<script>
+				Galleria.loadTheme('js/galleriathemes/classic/galleria.classic.min.js');
+			
+				Galleria.run('#galleria', {maxScaleRatio: 1, showInfo: false});
+			</script>
+				
+			
+		</div><!--Closes content div-->
+		
+		<footer> 
+			&copy; Caroline Rose 2015
+		</footer>
+
+	</div><!--Closes wrapper div-->
+</body>
+</html>

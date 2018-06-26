@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>SANKEY Experiment</title>
+     <link rel="stylesheet" href="thesis.css" />
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<style>
+
+body.a{
+    color: #888;
+    text-decoration: underline;
+}
+
+#chart svg{
+    background-color: white;
+}
+ 
+.node rect {
+  cursor: ns-resize;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+ 
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+ 
+.link:hover {
+  stroke-opacity: .5;
+}
+ 
+</style>
+
+</head>
+<body>
+    <div id="content">
+    
+        
+        <div class="section group">
+            <!-- <div class="col span_1_of_5">-->
+            <div class="col span_1_of_4"> 
+            
+                <a style="text-decoration: none;" href="index.html">
+                    <div class="navButton button">
+                        <!--<img src="backarrow_black.png" id="backarrow">-->
+                        home
+                    </div>
+
+                </a>
+            </div>
+            
+            
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="sankey_allconnections.html">
+                    <div class="navButton button">
+                        Diagram           
+                    </div>
+                </a>
+            </div>
+            
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="summary.html">
+                    <div class="navButton button">
+                        Summary by tech         
+                    </div>
+                </a>
+            </div>
+  
+            <div class="col span_1_of_4"> 
+                <a style="text-decoration: none;" href="http://wisarandgis.blogspot.com/" target="_blank">
+                    <div class="navButton button">
+                        visit the SARGIS Blog          
+                    </div>
+                </a>
+            </div>
+        </div>
+       <!--end navButtonsGroup div-->
+        
+        <h2>Mapping Technology in Wilderness Search and Rescue: <br>a Sankey diagram of interview data</h2>
+            <div class="description">
+                <p>You can drag any rectangle vertically to rearrange the columns. 
+                <br>Hover over a rectangle to see the frequency of statements relating to one concept. 
+                <br>Hover over a link to see the frequency of statements relating to both of the concepts it connects.</p><br>
+                <p>This diagram isn't an executive summary of my data; it's more of an exploratory tool. It helps me point out some interesting patterns... <br>For instance, disscussion regarding mobile apps inlcuded many suggestions and many problems (look for strong links between 'Mobile' and 'Problem' or 'Suggestion'), but interview participants did not discuss many 'Current uses' of mobile apps - most likely because many WiSAR teams do not use mobile apps at this time.</p>
+            </div>
+        
+
+
+        <p id="chart">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script> 
+        <script src="http://d3js.org/d3.v3.js"></script>
+        <script src="sankey.js"></script>
+        <script>
+
+        var units = "Statements";
+
+        var margin = {top: 10, right: 10, bottom: 10, left: 10},
+            width = 1000 - margin.left - margin.right,
+            height = 740 - margin.top - margin.bottom;
+
+        var formatNumber = d3.format(",.0f"),    // zero decimal places
+            format = function(d) { return formatNumber(d) + " " + units; },
+            color =  //"#575757"; //dark grey for rectangles..don't know why this disappears the labels. 
+            d3.scale.category20c();
+
+        // append the svg canvas to the page
+        var svg = d3.select("#chart").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+          .append("g")
+            .attr("transform", 
+                  "translate(" + margin.left + "," + margin.top + ")");
+
+        // Set the sankey diagram properties
+        var sankey = d3.sankey()
+            .nodeWidth(36)
+            .nodePadding(10)
+            .size([width, height]);
+
+        var path = sankey.link();
+
+        // load the data
+
+
+        d3.json("newAllLinks.json", function(error, graph) {
+
+            var nodeMap = {};
+            graph.nodes.forEach(function(x) { nodeMap[x.name] = x; });
+            graph.links = graph.links.map(function(x) {
+              return {
+                source: nodeMap[x.source],
+                target: nodeMap[x.target],
+                value: x.value
+              };
+            });
+
+          sankey
+              .nodes(graph.nodes)
+              .links(graph.links)
+              .layout(32);
+
+        // add in the links
+          var link = svg.append("g").selectAll(".link")
+              .data(graph.links)
+            .enter().append("path")
+              .attr("class", "link")
+              .attr("d", path)
+              .style("stroke-width", function(d) { return Math.max(1, d.dy); })
+              .sort(function(a, b) { return b.dy - a.dy; });
+
+        // add the link titles
+          link.append("title")
+                .text(function(d) {
+                return d.source.name + " → " + 
+                        d.target.name + "\n" + format(d.value); });
+
+        // add in the nodes
+          var node = svg.append("g").selectAll(".node")
+              .data(graph.nodes)
+            .enter().append("g")
+              .attr("class", "node")
+              .attr("transform", function(d) { 
+                  return "translate(" + d.x + "," + d.y + ")"; })
+            .call(d3.behavior.drag()
+              .origin(function(d) { return d; })
+              .on("dragstart", function() { 
+                  this.parentNode.appendChild(this); })
+              .on("drag", dragmove));
+
+        // add the rectangles for the nodes
+          node.append("rect")
+              .attr("height", function(d) { return d.dy; })
+              .attr("width", sankey.nodeWidth())
+              .style("fill", "#575757"
+                     //function(d) { return d.color = color(d.name.replace(/ .*/, "")); }
+                    )
+              .style("stroke", function(d) { 
+                  return d3.rgb(d.color).darker(2); })
+                //.on("mouseover", function(){console.log("hover");})
+                .append("title")
+                    .text(function(d) { 
+                    return d.name + "\n" + format(d.value); });
+
+        // add in the title for the nodes
+          node.append("text")
+              .attr("x", -6)
+              .attr("y", function(d) { return d.dy / 2; })
+              .attr("dy", ".35em")
+              .attr("text-anchor", "end")
+              .attr("transform", null)
+              .text(function(d) { return d.name; })
+           .filter(function(d) { return d.x < width / 6; })
+              .attr("x", 6 + sankey.nodeWidth())
+              .attr("text-anchor", "start")
+          ;
+
+        //allow only y movement
+        function dragmove(d) {
+            d3.select(this).attr("transform", 
+               "translate(" + d.x + "," + (
+                        d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                    ) + ")");
+            sankey.relayout();
+            link.attr("d", path);
+
+        // the function for moving the nodes
+         /* function dragmove(d) {
+            d3.select(this).attr("transform", 
+                "translate(" + (
+                       d.x = Math.max(0, Math.min(width - d.dx, d3.event.x))
+                    ) + "," + (
+                           d.y = Math.max(0, Math.min(height - d.dy, d3.event.y))
+                    ) + ")");
+            sankey.relayout();
+            link.attr("d", path);*/
+          }
+        });
+
+
+        </script>
+
+        <p>Drawn with the <a href="d3js.org">D3 javascript visualization library</a>.<br>
+            Based heavily on this <a href="http://www.d3noob.org/2013/02/sankey-diagrams-description-of-d3js-code.html">Sankey diagram tutorial</a>. 
+        </p>
+    </div>
+</body>
+</html>
