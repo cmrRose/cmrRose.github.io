@@ -1,2 +1,2 @@
 Link to the live page: 
-cmrrose.github.io/mapbox-basemaps
+http://cmrrose.github.io/mapbox-basemaps/ 
